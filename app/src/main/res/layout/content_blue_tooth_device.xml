@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".BlueToothDeviceActivity"
+    tools:showIn="@layout/activity_blue_tooth_device">
+
+    <TextView
+        android:id="@+id/deviceInfoTV"
+        android:layout_width="148dp"
+        android:layout_height="27dp"
+        android:text="info"
+        android:textSize="24sp"
+        android:textStyle="normal"
+        app:layout_constraintBaseline_toBaselineOf="@+id/infoTV"
+        app:layout_constraintStart_toEndOf="@+id/guideline" />
+
+    <TextView
+        android:id="@+id/deviceNametextView"
+        android:layout_width="wrap_content"
+        android:layout_height="31dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Device Name:"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/deviceAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="31dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Address: "
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deviceNametextView" />
+
+    <TextView
+        android:id="@+id/infoTV"
+        android:layout_width="wrap_content"
+        android:layout_height="31dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Info: "
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deviceAddress" />
+
+    <TextView
+        android:id="@+id/deviceNametv"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:text="name"
+        android:textSize="24sp"
+        android:textStyle="normal"
+        app:layout_constraintBaseline_toBaselineOf="@+id/deviceNametextView"
+        app:layout_constraintStart_toEndOf="@+id/guideline" />
+
+    <TextView
+        android:id="@+id/deviceAddressTV"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:text="address"
+        android:textSize="24sp"
+        android:textStyle="normal"
+        app:layout_constraintBaseline_toBaselineOf="@+id/deviceAddress"
+        app:layout_constraintStart_toEndOf="@+id/guideline" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="187dp" />
+</android.support.constraint.ConstraintLayout>
